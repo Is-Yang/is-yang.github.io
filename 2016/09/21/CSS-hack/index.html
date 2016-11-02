@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      CSS-hack | IsYang&#39;s Blog 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="isyang">
+    
+    
+
+    <meta name="description" content="原文百度百科 
+
+css hack简介
+CSS hack的目的就是使你的CSS代码兼容不同的浏览器。当然，我们也可以反过来利用CSS hack为不同版本的浏览器定制编写不同的CSS效果。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS-hack | IsYang's Blog">
+<meta property="og:url" content="http://Is-Yang.github.io/2016/09/21/CSS-hack/index.html">
+<meta property="og:site_name" content="IsYang's Blog">
+<meta property="og:description" content="原文百度百科 
+
+css hack简介
+CSS hack的目的就是使你的CSS代码兼容不同的浏览器。当然，我们也可以反过来利用CSS hack为不同版本的浏览器定制编写不同的CSS效果。">
+<meta property="og:updated_time" content="2016-11-02T07:02:34.244Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS-hack | IsYang's Blog">
+<meta name="twitter:description" content="原文百度百科 
+
+css hack简介
+CSS hack的目的就是使你的CSS代码兼容不同的浏览器。当然，我们也可以反过来利用CSS hack为不同版本的浏览器定制编写不同的CSS效果。">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">IsYang&#39;s Blog</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          生于忧患，死于安乐。
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/Is-Yang" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">CSS-hack</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-09-21" class="post-meta__date date">2016-09-21</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/CSS/">CSS</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/兼容性/">兼容性</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <blockquote>
+<p><strong> 原文<a href="http://baike.baidu.com/link?url=LJYcuzO9MdZhozkLxDYeMaI8KK3ptxiwAN2qfJincjZU3F5wpHBnHM3hEZe4Yr9zX4fPT_x7ezUdkklb0JDPqlWZjAuo47pDpKCY3OBhvyS" target="_blank" rel="external">百度百科</a> </strong></p>
+</blockquote>
+<h3 id="css-hack简介"><a href="#css-hack简介" class="headerlink" title="css hack简介"></a>css hack简介</h3><blockquote>
+<p><strong>CSS hack</strong>的目的就是使你的CSS代码兼容不同的浏览器。当然，我们也可以反过来利用CSS hack为不同版本的浏览器定制编写不同的CSS效果。 </p>
+</blockquote>
+<a id="more"></a>  
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>由于不同的浏览器对CSS的支持及解析结果不一样，还由于CSS中的优先级的关系。我们就可以根据这个来针对不同的浏览器来写不同的CSS。</p>
+<hr>
+<p>CSS Hack大致有3种表现形式，<strong>CSS类内部Hack</strong>、<strong>选择器Hack</strong>以及<strong>HTML头部引用(if IE)Hack</strong>，CSS Hack主要针对类内部Hack：比如 IE6能识别下划线和星号，IE7能识别星号，但不能识别下划线，而firefox两个都不能认识。等等<br>选择器Hack：比如 IE6能识别&#8727;html .class{}，IE7能识别&#8727;+html .class{}或者&#8727;:first-child+html .class{}。等等</p>
+<p>HTML头部引用(if IE)Hack：针对所有IE：<!--[if IE]><!--您的代码-->&lt;![endif]–&gt;，针对IE6及以下版本：<!--[if lt IE 7]><!--您的代码-->&lt;![endif]–&gt;，这类Hack不仅对CSS生效，对写在判断语句里面的所有代码都会生效。<br>书写顺序，一般是将识别能力强的浏览器的CSS写在后面。下面如何写里面说得更详细些。</p>
+<h3 id="常用的CSS-hack方式"><a href="#常用的CSS-hack方式" class="headerlink" title="常用的CSS hack方式"></a>常用的CSS hack方式</h3><h4 id="（1）方式一-条件注释法"><a href="#（1）方式一-条件注释法" class="headerlink" title="（1）方式一 条件注释法"></a>（1）方式一 条件注释法</h4><pre><code>&lt;!--[if IE]&gt;
+    这段文字只在IE浏览器显示
+&lt;![endif]--&gt;
+
+&lt;!--[if IE 6]&gt;
+    这段文字只在IE6浏览器显示
+&lt;![endif]--&gt;
+
+&lt;!--[if gte IE 6]&gt;
+    这段文字只在IE6以上(包括)版本IE浏览器显示
+&lt;![endif]--&gt;
+
+&lt;!--[if ! IE 8]&gt;
+    这段文字在非IE8浏览器显示
+&lt;![endif]--&gt;
+
+&lt;!--[if !IE]&gt;
+    这段文字只在非IE浏览器显示
+&lt;![endif]--&gt;
+</code></pre><hr>
+<h4 id="（2）方式二-类内属性前缀法"><a href="#（2）方式二-类内属性前缀法" class="headerlink" title="（2）方式二 类内属性前缀法"></a>（2）方式二 类内属性前缀法</h4><blockquote>
+<p>属性前缀法是在CSS样式属性名前加上一些只有特定浏览器才能识别的hack前缀，以达到预期的页面展现效果。</p>
+</blockquote>
+<p>IE浏览器各版本 CSS hack 对照表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">hack</th>
+<th style="text-align:left">写法</th>
+<th style="text-align:left">实例</th>
+<th style="text-align:center">IE6<br>(S)</th>
+<th style="text-align:center">IE6<br>(Q)</th>
+<th style="text-align:center">IE7<br>(S)</th>
+<th style="text-align:center">IE7<br>(Q)</th>
+<th style="text-align:center">IE8<br>(S)</th>
+<th style="text-align:center">IE8<br>(Q)</th>
+<th style="text-align:center">IE9<br>(S)</th>
+<th style="text-align:center">IE9<br>(Q)</th>
+<th style="text-align:center">IE10<br>(S)</th>
+<th style="text-align:center">IE10<br>(Q)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:left">*color</td>
+<td style="text-align:left">青色</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+</tr>
+<tr>
+<td style="text-align:center">+</td>
+<td style="text-align:left">+color</td>
+<td style="text-align:left">绿色</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:left">-color</td>
+<td style="text-align:left">黄色</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td style="text-align:center">_</td>
+<td style="text-align:left">_color</td>
+<td style="text-align:left">蓝色</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td style="text-align:center">#</td>
+<td style="text-align:left">#color</td>
+<td style="text-align:left">紫色</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+</tr>
+<tr>
+<td style="text-align:center">\0</td>
+<td style="text-align:left">color:red\0</td>
+<td style="text-align:left">红色</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td style="text-align:center">\9\0</td>
+<td style="text-align:left">color:red\9\0</td>
+<td style="text-align:left">粉色</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td style="text-align:center">!important</td>
+<td style="text-align:left">color:blue !important;color:green;</td>
+<td style="text-align:left">棕色</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">Y</td>
+</tr>
+</tbody>
+</table>
+<p>说明：在标准模式中</p>
+<ul>
+<li>“-″减号是IE6专有的hack</li>
+<li>“\9″ IE6/IE7/IE8/IE9/IE10都生效</li>
+<li>“\0″ IE8/IE9/IE10都生效，是IE8/9/10的hack</li>
+<li>“\9\0″ 只对IE9/IE10生效，是IE9/10的hack</li>
+</ul>
+<hr>
+<h4 id="（3）方式三-选择器前缀法"><a href="#（3）方式三-选择器前缀法" class="headerlink" title="（3）方式三 选择器前缀法"></a>（3）方式三 选择器前缀法</h4><blockquote>
+<p>选择器前缀法是针对一些页面表现不一致或者需要特殊对待的浏览器，在CSS选择器前加上一些只有某些特定浏览器才能识别的前缀进行hack。</p>
+</blockquote>
+<p>几种常见的选择器前缀法</p>
+<ul>
+<li>&#8727;html  –&gt;     &#8727;前缀只对IE6生效</li>
+<li>&#8727;+html –&gt;     &#8727;+前缀只对IE7生效</li>
+<li>@media screen\9{…}   –&gt; IE6/7生效</li>
+<li>@media \0screen {body { background: red; }}   –&gt; IE8有效</li>
+<li>@media \0screen\,screen\9{body { background: blue; }}   –&gt; IE6/7/8有效</li>
+<li>@media screen\0 {body { background: green; }}   –&gt; IE8/9/10有效</li>
+<li>@media screen and (min-width:0\0) {body { background: gray; }}  –&gt;  E9/10有效</li>
+<li>@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {body { background: orange; }}   –&gt;   IE10有效</li>
+</ul>
+<hr>
+<h3 id="实际应用"><a href="#实际应用" class="headerlink" title="实际应用"></a>实际应用</h3><p>浏览器优先级别:FF&lt;IE7&lt;IE6,CSS hack书写顺序一般为FF IE7 IE6</p>
+<p>以: “ #demo {width:100px;} “为例;</p>
+<ul>
+<li>#demo {width:100px;} /&#8727;被FIREFOX,IE6,IE7执行.&#8727;/</li>
+<li>&#8727;html #demo {width:120px;} /&#8727;会被IE6执行,之前的定义会被后来的覆盖,所以#demo的宽度在IE6就为120px; &#8727;/</li>
+<li>&#8727;+html #demo {width:130px;} /&#8727;会被IE7执行&#8727;/</li>
+</ul>
+<p>所以最后,#demo的宽度在三个浏览器的解释为: FIREFOX:100px; ie6:120px; ie7:130px;</p>
+<hr>
+<p>CSS内部属性级Hack    </p>
+<blockquote>
+<p>语法：<code>selector{&lt;hack&gt;?property:value&lt;hack&gt;?;}</code><br>取值：</p>
+<ul>
+<li>“下划线” ： 选择IE6及以下。连接线（中划线）（-）亦可使用，为了避免与某些带中划线的属性混淆，所以使用下划线更为合适。</li>
+<li>“星号”：选择IE7及以下。诸如：（+）与（#）之类的均可使用，不过业界对（星号）的认知度更高。</li>
+<li>\9：选择IE6+。</li>
+<li>\0：选择IE8+和Opera。</li>
+<li>[;property:value;]; 选择webkit核心浏览器（Chrome,Safari）。IE7及以下也能识别。<br>中括号内外的3个分号必须保留，第一个分号前可以是任意规则或任意多个规则。<br>[;color:#f00;]; 与 [color:#f00;color:#f00;]; 与 [margin:0;padding:0;color:#f00;]; 是等价的。<br>生效的始终是中括号内的最后一条规则，所以通常选用第一种写法最为简洁。</li>
+</ul>
+</blockquote>
+<hr>
+<blockquote>
+<p>注：</p>
+<ul>
+<li>IE都能识别*，标准浏览器(如FF)不能识别&#8727;；</li>
+<li>IE6能识别*，不能识别 !important;</li>
+<li>IE7能识别*，能识别!important;</li>
+<li>FF不能识别*，但能识别!important;</li>
+<li>“\9”　例:”border:1px \9;”.这里的”\9”可以区别所有IE和FireFox.（只针对IE9 Hack）;</li>
+<li>“\0”　IE8识别，IE6、IE7不能;</li>
+<li>“_”　IE6可以识别下划线,IE7、IE8、FireFox不能;</li>
+</ul>
+</blockquote>
+<hr>
+<blockquote>
+<p>尽可能减少对CSS Hack的使用。Hack有风险，使用需谨慎。<br><strong>注意了</strong>：不管是什么方法，书写的顺序都是firefox的写在前面，IE7的写在中间，IE6的写在最后面。<br>补充：IE6能识别 <em>，但不能识别 !important,IE7能识别 </em>，也能识别!important;FF不能识别 *，但能识别!important;下划线”_“IE6支持下划线，IE7和firefox均不支持下划线。</p>
+</blockquote>
+
+  </section>
+
+  
+  
+<section class="post-comments">
+    <div class="ds-thread" data-thread-key="2016/09/21/CSS-hack/"></div>
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"is-yang"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+</section>
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2016&nbsp;IsYang</span>
+	
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?f452c2ae6a5ab8bd7e3f6693fb66a79a";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

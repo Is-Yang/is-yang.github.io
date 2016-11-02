@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS-JavaScript闭包 | IsYang&#39;s Blog 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="isyang">
+    
+    
+
+    <meta name="description" content="闭包简介
+闭包是指有权访问另一个函数作用域中的变量的函数。创建闭包的常见方式，就是在一个函数内部创建另一个函数。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS-JavaScript闭包 | IsYang's Blog">
+<meta property="og:url" content="http://Is-Yang.github.io/2016/10/22/JS-JavaScript闭包/index.html">
+<meta property="og:site_name" content="IsYang's Blog">
+<meta property="og:description" content="闭包简介
+闭包是指有权访问另一个函数作用域中的变量的函数。创建闭包的常见方式，就是在一个函数内部创建另一个函数。">
+<meta property="og:updated_time" content="2016-11-02T06:55:44.984Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS-JavaScript闭包 | IsYang's Blog">
+<meta name="twitter:description" content="闭包简介
+闭包是指有权访问另一个函数作用域中的变量的函数。创建闭包的常见方式，就是在一个函数内部创建另一个函数。">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">IsYang&#39;s Blog</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          生于忧患，死于安乐。
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/Is-Yang" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS-JavaScript闭包</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-10-22" class="post-meta__date date">2016-10-22</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/JavaScript/">JavaScript</a>
+            </font>
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h3 id="闭包简介"><a href="#闭包简介" class="headerlink" title="闭包简介"></a>闭包简介</h3><blockquote>
+<p><strong>闭包</strong>是指有权访问另一个函数作用域中的变量的函数。<br>创建闭包的常见方式，就是在一个函数内部创建另一个函数。</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h3><blockquote>
+<p>变量的作用域分为：<strong>全局变量</strong> 和 <strong>局部变量</strong></p>
+</blockquote>
+<h4 id="（一）、全局变量和局部变量代码所示"><a href="#（一）、全局变量和局部变量代码所示" class="headerlink" title="（一）、全局变量和局部变量代码所示"></a>（一）、全局变量和局部变量代码所示</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> color = <span class="string">"blue"</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">changeColor</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> anotherColor = <span class="string">"red"</span>;</div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">swapColors</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="keyword">var</span> tempColor = anotherColor;</div><div class="line">		anotherColor = color;</div><div class="line">		color = tempColor;</div><div class="line">	</div><div class="line">		<span class="comment">//这里可以访问color、anotherColor和tempColor</span></div><div class="line">	&#125;</div><div class="line">	<span class="comment">//这里可以访问color和anotherColor，但不能访问tempCOlor</span></div><div class="line">	swapColors();</div><div class="line">&#125;</div><div class="line"><span class="comment">//这里只能访问color</span></div><div class="line">changeColor();</div></pre></td></tr></table></figure>
+<p>以上代码共涉及3个执行变量：全局变量、changeColor()的局部环境和swapColors()的局部环境。<br>全局环境中有一个变量color和一个函数changeColor()。<br>changeColor()的局部环境中有一个变量anotherColor和一个函数swapColors();并可以访问全局环境中的变量color。<br>swapColors()的局部环境中有一个变量tempColor;该变量只能在这个swapColors()的局部环境中访问，然而可以访问其他两个环境中（父执行环境）的所有变量。</p>
+<blockquote>
+<p><code>内部环境可以通过作用域访问所有的外部环境，但外部环境不能访问内部环境中的任何变量和函数。</code></p>
+</blockquote>
+<hr>
+<h4 id="（二）、声明变量"><a href="#（二）、声明变量" class="headerlink" title="（二）、声明变量"></a>（二）、声明变量</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">	sum = num1 + num2;</div><div class="line">	<span class="keyword">return</span> sum;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> result = add(<span class="number">10</span>,<span class="number">20</span>);</div><div class="line">alert(sum);  <span class="comment">//30</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p><code>如果初始化变量时没有使用var声明，该变量会自动被添加到全局环境。</code></p>
+</blockquote>
+<hr>
+<h4 id="（三）、查询标识符"><a href="#（三）、查询标识符" class="headerlink" title="（三）、查询标识符"></a>（三）、查询标识符</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> color =<span class="string">"blue"</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getColor</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> color = <span class="string">"red"</span>;</div><div class="line">	<span class="keyword">return</span> color;</div><div class="line">&#125;</div><div class="line">alert(getColor()); <span class="comment">//"red"</span></div></pre></td></tr></table></figure>
+<p><code>如果局部环境中存在着同名标识符，就不会使用位于父环境中的标识符。也就是说任何位于局部变量color的声明之后的代码，如果不使用window.color都无法访问全局color变量。</code></p>
+<hr>
+<blockquote>
+<p><strong>以下是来自阮一峰总结</strong></p>
+</blockquote>
+<h3 id="闭包的概念"><a href="#闭包的概念" class="headerlink" title="闭包的概念"></a>闭包的概念</h3><blockquote>
+<p><code>1. 闭包就是能够读取其他函数内部变量的函数。</code><br><code>2. 定义在一个函数内部的函数。</code></p>
+</blockquote>
+<hr>
+<h3 id="闭包的用途"><a href="#闭包的用途" class="headerlink" title="闭包的用途"></a>闭包的用途</h3><blockquote>
+<ol>
+<li>可以读取函数内部的变量</li>
+<li>可以让这些变量的值始终保持在内存中。</li>
+</ol>
+</blockquote>
+<hr>
+<h3 id="使用闭包的注意点"><a href="#使用闭包的注意点" class="headerlink" title="使用闭包的注意点"></a>使用闭包的注意点</h3><blockquote>
+<ol>
+<li>由于闭包会使得函数中的变量都被保存在内存中，<code>内存消耗很大</code>，所以不能滥用闭包，否则会造成<code>网页的性能问题</code>，在<code>Ie中可能导致内存泄露</code>。 <strong>解决方法是，在退出函数之前，将不使用的局部变量全部删除</strong>。</li>
+<li>闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当做对象(object)使用，把闭包当作它的公用方法(public method)，把内部变量当作它的私有属性(pricate value)，这时不要随便改变父函数内部变量的值。</li>
+</ol>
+</blockquote>
+
+  </section>
+
+  
+  
+<section class="post-comments">
+    <div class="ds-thread" data-thread-key="2016/10/22/JS-JavaScript闭包/"></div>
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"is-yang"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+</section>
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2016&nbsp;IsYang</span>
+	
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?f452c2ae6a5ab8bd7e3f6693fb66a79a";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

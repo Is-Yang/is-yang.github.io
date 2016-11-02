@@ -960,20 +960,20 @@ h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1.2em;
   letter-spacing: .05em; }
 
 h2 {
-  font-size: 2.2em; }
+  font-size: 2em; }
 
 h3 {
-  font-size: 1.8em;
-  border-left: 0.3em solid #4d4d4d;
+  font-size: 1.6em;
+  border-left: 0.3em solid #666;
   padding-left: 1rem; 
   font-weight: bold;
   margin: 1.2em 0 .6em 0;  
-  color:#4d4d4d;}
+  color:#666;}
 
 h4 {
   font-size: 1.4em; }
@@ -1049,8 +1049,8 @@ code {
 
 .excerpt {
   margin: 0;
-  font-size: .9em;
-  color: #999999; }
+  font-size: 1em;
+  color: #666; }
 
 .intro {
   font-family: "Roboto Slab", serif;
@@ -1426,7 +1426,7 @@ i {
 .post-list__post-title {
   margin-top: 0;
   margin-bottom: .2em;
-  font-size: 1.8em;
+  font-size: 2em;
   -webkit-font-smoothing: antialiased;
   font-weight: bold;
   line-height: 1.3em; }

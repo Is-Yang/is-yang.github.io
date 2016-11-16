@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      CSS3-属性归纳（下） | IsYang&#39;s Blog 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="isyang">
+    
+    
+
+    <meta name="description" content="CSS3--动画过渡，变形，布局样式，Media Queries，Responsive设计，用户界面与其他属性">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3-属性归纳（下） | IsYang's Blog">
+<meta property="og:url" content="http://Is-Yang.github.io/2016/11/15/CSS3-属性归纳（下）/index.html">
+<meta property="og:site_name" content="IsYang's Blog">
+<meta property="og:description" content="CSS3--动画过渡，变形，布局样式，Media Queries，Responsive设计，用户界面与其他属性">
+<meta property="og:updated_time" content="2016-11-16T00:45:19.265Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS3-属性归纳（下） | IsYang's Blog">
+<meta name="twitter:description" content="CSS3--动画过渡，变形，布局样式，Media Queries，Responsive设计，用户界面与其他属性">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">IsYang&#39;s Blog</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          生于忧患，死于安乐。
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/Is-Yang" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">CSS3-属性归纳（下）</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-11-15" class="post-meta__date date">2016-11-15</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/CSS/">CSS</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h3 id="1-CSS3中的变形–transform"><a href="#1-CSS3中的变形–transform" class="headerlink" title="1. CSS3中的变形–transform"></a>1. CSS3中的变形–transform</h3><p>transform –&gt; 元素的改变</p>
+<p><strong>transform:rotate()</strong> –&gt; 作用用于旋转<br>transform:rotate(45deg);</p>
+<p><strong>transform:skew()</strong> –&gt; 作用用于元素的倾斜显示<br>transform:skew(x,y);<br>transform:skewX(45deg);<br>transform:skewY(45deg);</p>
+<p>与rotate()函数的旋转不同，rotate()函数只是旋转，而不会改变元素的形状。<br>skew()函数不会旋转，而只会改变元素的形状。</p>
+<p><strong>transform:scale()</strong> –&gt; 作用用于元素的缩放<br>transform:scale(x,y);<br>transform:scaleX(1.5);<br>transform:scaleY(0.5);</p>
+<p><strong>transform:translate()</strong> –&gt; 作用向指定的方向移动，类似于position中的relative。<br>transform:translate(x,y);<br>transform:translateX(50px);<br>transform:translateY(100px);</p>
+<p><strong> matrix() </strong> –&gt; 用来指定一个2D变换<br>matrix(x长度缩放，y轴扭曲，x轴扭曲，y宽度缩放，x位移，y位移)</p>
+<hr>
+<h3 id="2-CSS3中的变形–原点-transform-origin"><a href="#2-CSS3中的变形–原点-transform-origin" class="headerlink" title="2. CSS3中的变形–原点 transform-origin"></a>2. CSS3中的变形–原点 transform-origin</h3><p>transform-origin –&gt; 用于对元素进行原点位置的改变。<br>取值与background-position类似。</p>
+<hr>
+<h3 id="3-CSS3中的动画–过渡属性transition-property"><a href="#3-CSS3中的动画–过渡属性transition-property" class="headerlink" title="3. CSS3中的动画–过渡属性transition-property"></a>3. CSS3中的动画–过渡属性transition-property</h3><p>transition –&gt; 元素动画的过渡</p>
+<p>在CSS中创建简单的过渡效果可以从以下几个步骤来实现：<br>第一，在默认样式中声明元素的初始状态样式；<br>第二，声明过渡元素最终状态样式，比如悬浮状态；<br>第三，在默认样式中通过添加过渡函数，添加一些不同的样式。</p>
+<p>transition-property:指定过渡或动态模拟的CSS属性</p>
+<p>transition-duration:指定完成过渡所需的时间</p>
+<p>transition-timing-function: 指过渡的“缓动函数”用来指定过渡的速度形式</p>
+<p>transition-timing-function:ease –&gt; 逐渐变慢<br>transition-timing-function:linear –&gt; 恒速<br>transition-timing-function:ease-in –&gt; 渐显效果（越来越快）<br>transition-timing-function:ease-out –&gt; 渐隐效果（越来越慢）<br>transition-timing-function:ease-in-out –&gt; 渐显渐隐（先加速再减速）</p>
+<p>transition-delay:指定开始出现的延迟时间</p>
+<p>可以为多个css属性设置不同动画，如果全部为相同的为all<br>a{ transition: background 0.8s ease-in 0.3,   color 0.6s ease-out 0.3;}<br>第一个时间的值为 transition-duration，第二个为transition-delay</p>
+<p>特别注意：当“transition-property”属性设置为all时，表示的是所有中点值的属性。</p>
+<hr>
+<h3 id="4-CSS3中设置动画播放时间"><a href="#4-CSS3中设置动画播放时间" class="headerlink" title="4. CSS3中设置动画播放时间"></a>4. CSS3中设置动画播放时间</h3><p>@keyframes –&gt; 关键帧<br>0% ~ 100%之间可以设置多个帧，<br>0%-100% = from()-to() </p>
+<p><strong> animation-name </strong> –&gt; 主要用来调用@keyframes定义好的动画，定义的动画名称完全一致</p>
+<p><strong> animation-duration </strong> –&gt; 主要用来设置动画播放时间</p>
+<p><strong> animation-timing-function </strong> –&gt; 主要用来设置动画的速度形式</p>
+<p><strong> animation-delay </strong> –&gt; 主要用来设置动画的延迟时间</p>
+<p><strong> animation-iteration-count </strong> –&gt; 主要用来定义动画的播放次数 （可为数值次数 | infinite(无限次数)）</p>
+<p><strong> animation-direction </strong> –&gt; 主要用来设置动画播放方向 （normal（默认值，动画的每次循环都是向前播放） | alternate（动画播放在第偶数次向前播放，第奇数次向反方向播放））</p>
+<p><strong> animation-play-state </strong> –&gt; 主要用来控制元素动画的播放状态 （running | paused）</p>
+<p>其中running是其默认值，主要作用就是类似于音乐播放器一样，可以通过paused将正在播放的动画停下来，也可以通过running将暂停的动画重新播放，这里的重新播放不一定是从元素动画的开始播放，而是从暂停的那个位置开始播放。另外如果暂停了动画的播放，元素的样式将回到最原始设置状态。</p>
+
+  </section>
+
+  
+  
+<section class="post-comments">
+    <div class="ds-thread" data-thread-key="2016/11/15/CSS3-属性归纳（下）/"></div>
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"is-yang"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+</section>
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2016&nbsp;IsYang</span>
+	
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?f452c2ae6a5ab8bd7e3f6693fb66a79a";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

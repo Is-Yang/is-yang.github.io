@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      CSS3-属性归纳（上） | IsYang&#39;s Blog 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="isyang">
+    
+    
+
+    <meta name="description" content="CSS3--圆角，阴影，图片表框，RGBA颜色，颜色渐变，文字与字体，嵌入字体@font-fac，属性选择器，结构性伪类选择器....">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3-属性归纳（上） | IsYang's Blog">
+<meta property="og:url" content="http://Is-Yang.github.io/2016/11/15/CSS3-属性归纳（上）/index.html">
+<meta property="og:site_name" content="IsYang's Blog">
+<meta property="og:description" content="CSS3--圆角，阴影，图片表框，RGBA颜色，颜色渐变，文字与字体，嵌入字体@font-fac，属性选择器，结构性伪类选择器....">
+<meta property="og:updated_time" content="2016-11-15T10:19:16.395Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS3-属性归纳（上） | IsYang's Blog">
+<meta name="twitter:description" content="CSS3--圆角，阴影，图片表框，RGBA颜色，颜色渐变，文字与字体，嵌入字体@font-fac，属性选择器，结构性伪类选择器....">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">IsYang&#39;s Blog</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          生于忧患，死于安乐。
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/Is-Yang" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">CSS3-属性归纳（上）</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-11-15" class="post-meta__date date">2016-11-15</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/CSS/">CSS</a>
+            </font>
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>把之前学习的CSS3现在做了一个总结，加深印象。</p>
+<h3 id="1-CSS3表框-圆角-border-radius"><a href="#1-CSS3表框-圆角-border-radius" class="headerlink" title="1.CSS3表框 圆角 border-radius"></a>1.CSS3表框 圆角 border-radius</h3><blockquote>
+<p> border-radius:4px 3px 2px 1px;<br> 左上角4px，右上角3px，右下角2px，左下角1px</p>
+</blockquote>
+<hr>
+<h3 id="2-CSS3边框-阴影-box-shadow"><a href="#2-CSS3边框-阴影-box-shadow" class="headerlink" title="2.CSS3边框 阴影 box-shadow"></a>2.CSS3边框 阴影 box-shadow</h3><blockquote>
+<p> box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式];</p>
+</blockquote>
+<p> X轴偏移量：必需，水平阴影的位置，允许负值。<br> Y轴偏移量：必需，垂直阴影的位置，允许负值。<br> 阴影模糊半径： 可选，模糊距离。<br> 阴影扩展半径： 可选，阴影的尺寸。<br> 阴影颜色：可选，阴影的颜色，省略默认为黑色。<br> 投影方式：可选。（设置inset时为内部阴影方式，如果省略为外阴影方式）。</p>
+<p><code>对于外阴影而言：开始坐标点是以左上为原点，x，y都为正，则像右下偏移，x正，y负，
+则像右上偏移，x负，y为正，则像坐下偏移，x,y都为负则像左上偏移 ,也可以理解为x的值是：右正,左负 y的值是：下正,上负；
+对于内阴影则是开始坐标点是以右下为原点。</code></p>
+<hr>
+<h3 id="3-CSS3边框-为边框应用图片-border-image"><a href="#3-CSS3边框-为边框应用图片-border-image" class="headerlink" title="3.CSS3边框 为边框应用图片 border-image"></a>3.CSS3边框 为边框应用图片 border-image</h3><p>与background属性相似</p>
+<blockquote>
+<p>border-image:路径 切割图片的宽度 图片延伸的方式</p>
+</blockquote>
+<p>图片延伸的方式分为：round(平铺)、repeat(重复)、stretch(拉伸)</p>
+<hr>
+<h3 id="4-CSS3颜色-颜色之RGBA"><a href="#4-CSS3颜色-颜色之RGBA" class="headerlink" title="4.CSS3颜色 颜色之RGBA"></a>4.CSS3颜色 颜色之RGBA</h3><p>RGB是一种色彩标准，是由红(R)、绿(G)、蓝(B)的变化以及相互叠加来得到各式各样的颜色。RGBA是在RGB的基础上增加了控制alpha透明度的参数。</p>
+<blockquote>
+<p>语法：color：rgba(R,G,B,A)</p>
+</blockquote>
+<p>以上R、G、B三个参数，正整数值的取值范围为：0 - 255。<br>百分数值的取值范围为：0.0% - 100.0%。超出范围的数值将被截至其最接近的取值极限。<br>并非所有浏览器都支持使用百分数值。A为透明度参数，取值在0~1之间，不可为负值。</p>
+<hr>
+<h3 id="5-CSS3颜色-渐变"><a href="#5-CSS3颜色-渐变" class="headerlink" title="5.CSS3颜色 渐变"></a>5.CSS3颜色 渐变</h3><p><strong>线性渐变</strong>：background-image:linear-gradient(angle, color-stop1, color-stop2); ==》 角度<br>background: linear-gradient(direction, color-stop1, color-stop2, …); ==》 方向</p>
+<p>angle ==》 表示渐变角度</p>
+<p>direction ==》（to top （0deg 从下向上)）、（to right （90deg 从左向右））、（to bottom （180deg 从上向下））、（to left （270deg 从右向左））、（to top left （右下角到左下角））、（to top right （左下角到右上角））</p>
+<p>color-stop1,color-stop2,… ==》 表示颜色的起始点和结束点，可以有多个色值</p>
+<p><strong>径向渐变</strong>：background-image:radial-gradientradial-gradient(center, shape, size, start-color, …, last-color);</p>
+<p>center ==》 渐变起点的位置，可以为百分比，默认时圆形的正中心。</p>
+<p>shape ==》 渐变的形状，elipse表示椭圆形，circle表示圆形。默认为ellipse，如果元素形状为正方形的元素，则ellipse和circle显示一样。</p>
+<p>size ==》 渐变的大小，即渐变到哪里停止，它有四个值。 closest-side：最近边； farthest-side：最远边； closest-corner：最近角；<br>farthest-corner：最远角</p>
+<hr>
+<h3 id="6-CSS3文字与字体-text-overflow-与-word-wrap"><a href="#6-CSS3文字与字体-text-overflow-与-word-wrap" class="headerlink" title="6.CSS3文字与字体 text-overflow 与 word-wrap"></a>6.CSS3文字与字体 text-overflow 与 word-wrap</h3><p>text-overflow:用来设置是否使用一个省略标记（…）标示对象内文本的溢出</p>
+<p>text-overflow:clip(表示剪切) | ellipsis（表示显示省略标记）<br>text-overflow只是用来说明文字益出时的方式显示，要实现溢出产生的省略号的效果，还需定义强制文本在一行内显示（white-space:nowrap）及溢出内容为隐藏（overflow:hidden）,只有这样才能实现溢出文本显示省略好的效果，代码如下：<br>text-overflow:ellipsis;<br>overflow:hidden;<br>white-space:nowrap;</p>
+<p>同时word-wrap：可以用来设置文本行为，当前行超过指定容器的边界时是否断开转行。<br>word-wrap:normal(控制连续文本换行)|break-word（两边内容在边界内换行）</p>
+<hr>
+<h3 id="7-CSS3文字与字体-嵌入字体-font-face"><a href="#7-CSS3文字与字体-嵌入字体-font-face" class="headerlink" title="7.CSS3文字与字体 嵌入字体@font-face"></a>7.CSS3文字与字体 嵌入字体@font-face</h3><p>@font-face能够加载服务器端的字体文件，让浏览器端可以显示用户电脑里没有安装的字体。</p>
+<p>语法：<br>@font-face{<br>    font-family:”字体名称:;<br>    src:url(字体文件在服务器上的相对或绝对路径);<br>}</p>
+<p>设置后，就可以使用普通字体一样在（font-*）中设置字体样式，与@font-face设置的名称相同</p>
+<hr>
+<h3 id="8-CSS3文字与字体-文本阴影text-shadow"><a href="#8-CSS3文字与字体-文本阴影text-shadow" class="headerlink" title="8.CSS3文字与字体 文本阴影text-shadow"></a>8.CSS3文字与字体 文本阴影text-shadow</h3><p>text-shadow可以用来设置文本的阴影效果。</p>
+<p>语法：text-shadow: X-Offset Y-Offset blur color;</p>
+<p>X-Offset：表示阴影的水平偏移距离，其值为正值时阴影向右偏移，反之向左偏移； </p>
+<p>Y-Offset：是指阴影的垂直偏移距离，如果其值是正值时，阴影向下偏移，反之向上偏移；</p>
+<p>Blur：是指阴影的模糊程度，其值不能是负值，如果值越大，阴影越模糊，反之阴影越清晰，如果不需要阴影模糊可以将Blur值设置为0；</p>
+<p>Color：是指阴影的颜色，其可以使用rgba色。</p>
+<hr>
+<h3 id="9-CSS3背景-background-origin"><a href="#9-CSS3背景-background-origin" class="headerlink" title="9.CSS3背景 background-origin"></a>9.CSS3背景 background-origin</h3><p>background-origin:设置元素背景图片的原始起始位置</p>
+<p>语法：background-origin: border-box(背景图从边框开始显示) | padding-box(内边距开始显示-默认值) | content-box (内容区域开始显示)</p>
+<p>注意：如果背景不是no-repeat,这个属性无效，会从边框开始显示</p>
+<hr>
+<h3 id="10-CSS3背景-background-clip"><a href="#10-CSS3背景-background-clip" class="headerlink" title="10.CSS3背景 background-clip"></a>10.CSS3背景 background-clip</h3><p>background-clip:用来将背景图片做适当的裁剪以适当实际需要</p>
+<p>语法：background-clip: border-box(从边框向外裁剪背景-默认值) | padding-box(内填充向外裁剪背景) | content-box(内容区域向外裁剪背景) | no-clip(表示不裁切，和参数border-box显示同样的效果)</p>
+<hr>
+<h3 id="11-CSS3背景-background-size"><a href="#11-CSS3背景-background-size" class="headerlink" title="11.CSS3背景 background-size"></a>11.CSS3背景 background-size</h3><p>设置背景图片的大小，以长度值或百分比显示，还可以通过cover和contain来对图片进行伸缩。</p>
+<p>语法：background-size: auto | &lt;长度值&gt; | &lt;百分比&gt; | cover | contain</p>
+<p>取值说明：</p>
+<p>1、auto：默认值，不改变背景图片的原始高度和宽度；</p>
+<p>2、&lt;长度值&gt;：成对出现如200px 50px，将背景图片宽高依次设置为前面两个值，当设置一个值时，将其作为图片宽度值来等比缩放；</p>
+<p>3、&lt;百分比&gt;：0％~100％之间的任何值，将背景图片宽高依次设置为所在元素宽高乘以前面百分比得出的数值，当设置一个值时同上；</p>
+<p>4、cover：顾名思义为覆盖，即将背景图片等比缩放以填满整个容器；</p>
+<p>5、contain：容纳，即将背景图片等比缩放至某一边紧贴容器边缘为止。</p>
+<hr>
+<h3 id="12-CSS3背景-multiple-backgrounds"><a href="#12-CSS3背景-multiple-backgrounds" class="headerlink" title="12.CSS3背景 multiple backgrounds"></a>12.CSS3背景 multiple backgrounds</h3><p>多重背景，也就是CSS2里background的属性外加origin、clip和size组成的新background的多次叠加，缩写时为用逗号隔开的每组值；用分解写法时，如果有多个背景图片，而其他属性只有一个（例如background-repeat只有一个），表明所有背景图片应用该属性值。</p>
+<p>语法缩写如下：</p>
+<p>background ： [background-color] | [background-image] | [background-position][/background-size] | [background-repeat] | [background-attachment] | [background-clip] | [background-origin],…</p>
+<p>把上面的缩写拆解成以下形式：</p>
+<p>background-image:url1,url2,…,urlN;</p>
+<p>background-repeat : repeat1,repeat2,…,repeatN;<br>backround-position : position1,position2,…,positionN;<br>background-size : size1,size2,…,sizeN;<br>background-attachment : attachment1,attachment2,…,attachmentN;<br>background-clip : clip1,clip2,…,clipN;<br>background-origin : origin1,origin2,…,originN;<br>background-color : color;</p>
+<p>注意：<br>用逗号隔开每组 background 的缩写值；<br>如果有 size 值，需要紧跟 position 并且用 “/“ 隔开；<br>如果有多个背景图片，而其他属性只有一个（例如 background-repeat 只有一个），表明所有背景图片应用该属性值。<br>background-color 只能设置一个。</p>
+<p>例子：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.demo1</span>&#123;</div><div class="line"> <span class="attribute">background-image</span>: <span class="built_in">url</span>(image1.png),</div><div class="line">		   <span class="built_in">url</span>(image2.png),</div><div class="line">		   <span class="built_in">url</span>(image3.png);</div><div class="line"> <span class="attribute">background-position</span>: left top, <span class="number">100px</span> <span class="number">0</span>, <span class="number">200px</span> <span class="number">0</span>;</div><div class="line"> <span class="attribute">background-repeat</span>: no-repeat, no-repeat, no-repeat; </div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/* 等价 */</span></div><div class="line"></div><div class="line"><span class="selector-class">.demo2</span>&#123;</div><div class="line"> <span class="attribute">background</span>:<span class="built_in">url</span>(image1.png) left top no-repeat,</div><div class="line">	    <span class="built_in">url</span>(image2.png) <span class="number">100px</span> <span class="number">0</span> no-repeat,</div><div class="line">	    <span class="built_in">url</span>(image3.png) <span class="number">200px</span> <span class="number">0</span> no-repeat;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="13-CSS3选择器-属性选择器"><a href="#13-CSS3选择器-属性选择器" class="headerlink" title="13.CSS3选择器 属性选择器"></a>13.CSS3选择器 属性选择器</h3><p>E[att^=val] ==&gt;匹配元素E，且E定义了属性 att，其属性以 val”开头”的任何字符串</p>
+<p>E[att$=val] ==&gt;匹配元素E，且E定义了属性 att，其属性以 val”结束”的任何字符串</p>
+<p>E[att*=val] ==&gt;匹配元素E，且E定义了属性 att，其属性”包含”了val的任何位置相匹配</p>
+<hr>
+<h3 id="14-CSS3-结构性伪类选择器–root"><a href="#14-CSS3-结构性伪类选择器–root" class="headerlink" title="14.CSS3 结构性伪类选择器–root"></a>14.CSS3 结构性伪类选择器–root</h3><p>:root选择器，从字面上我们就可以很清楚的理解是根选择器，他的意思就是匹配元素E所在文档的根元素。在HTML文档中，根元素始终是<html>。</html></p>
+<p>“:root”选择器等同于<html>元素<br>:root{background:green;} == html{background:orange;}<br>建议使用:root方法</html></p>
+<p>另外在IE９以下还可以借助“:root”实现hack功能。</p>
+<hr>
+<h3 id="15-CSS3-结构性伪类选择器–not"><a href="#15-CSS3-结构性伪类选择器–not" class="headerlink" title="15.CSS3 结构性伪类选择器–not"></a>15.CSS3 结构性伪类选择器–not</h3><p>:not选择器称为否定选择器</p>
+<p>语法：input:not([type=”submit”]){….}<br>注意not有括号包含。</p>
+<hr>
+<h3 id="16-CSS3-结构性伪类选择器–empty"><a href="#16-CSS3-结构性伪类选择器–empty" class="headerlink" title="16.CSS3 结构性伪类选择器–empty"></a>16.CSS3 结构性伪类选择器–empty</h3><p>:empty选择器表示的就是空。<br>用来选择没有任何内容的元素，这里没有内容指的是一点内容都没有，哪怕是一个空格。</p>
+<hr>
+<h3 id="17-CSS3-结构性伪类选择器–target"><a href="#17-CSS3-结构性伪类选择器–target" class="headerlink" title="17.CSS3 结构性伪类选择器–target"></a>17.CSS3 结构性伪类选择器–target</h3><p>:target选择器称为目标选择器，用来匹配文档(页面)的url的某个标志符的目标元素<br>a标签的路径链接名称要与id的名称相对应<br>点击此链接显示或添加此段落的样式</p>
+<p>例子：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#brand"</span>&gt;</span>Brand<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"menuSection"</span> <span class="attr">id</span>=<span class="string">"brand"</span>&gt;</span></div><div class="line">    content for Brand</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.menuSection</span>&#123;</div><div class="line">  <span class="attribute">display</span>: none;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/*这里的:target就是指id="brand"的div对象*/</span></div><div class="line"><span class="selector-pseudo">:target</span>&#123;</div><div class="line">  <span class="attribute">display</span>:block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="18-CSS3-结构性伪类选择器"><a href="#18-CSS3-结构性伪类选择器" class="headerlink" title="18.CSS3 结构性伪类选择器"></a>18.CSS3 结构性伪类选择器</h3><p><strong>:first-child</strong> 选择器表示的是选择父元素的“第一个”子元素的元素E。</p>
+<p><strong>:last-child</strong> 选择器表示的是选择父元素的“最后一个”子元素的元素E。</p>
+<p><strong>:nth-child(n)</strong> 选择器用来定位某个父元素的一个或多个特定的子元素。</p>
+<p>其中“n”是其参数，而且可以是整数值(1,2,3,4)，也可以是表达式(2n+1、-n+5)和关键词(odd、even)，但参数n的起始值始终是1，而不是0。也就是说，参数n的值为0时，选择器将选择不到任何匹配的元素。</p>
+<p><strong>:nth-last-child(n)</strong> 从某父元素的最后一个子元素开始计算，来选择特定的元素。</p>
+<p><strong>:first-of-type</strong> 选择器，指定了元素的类型，其主要用来定位一个父元素下的某个类型的第一个子元素<br>例如： .wrapper &gt; div:first-of-type{…}<br>.wrapper下面的第一个div</p>
+<p><strong>:last-of-type</strong> 选择器和“:first-of-type”选择器功能是一样的，不同的是他选择是父元素下的某个类型的最后一个子元素。</p>
+<p><strong>:nth-of-type(n)</strong> 选择器用来定位于父元素中某种类型的子元素</p>
+<p><strong>:nth-last-of-type(n)</strong> 选择器和“:nth-of-type(n)” 选择器是一样的，选择父元素中指定的某种子元素类型，但它的起始方向是从最后一个子元素开始</p>
+<p><strong>:only-child</strong> 选择器选择的是父元素中只有一个子元素，而且只有唯一的一个子元素。也就是说，匹配的元素的父元素中仅有一个子元素，而且是一个唯一的子元素。</p>
+<p><strong>:only-of-type</strong> 是表示一个元素他有很多个子元素，而其中只有一种类型的子元素是唯一的，使用“:only-of-type”选择器就可以选中这个元素中的唯一一个类型子元素。</p>
+<h3 id="19-CSS3选择器"><a href="#19-CSS3选择器" class="headerlink" title="19.CSS3选择器"></a>19.CSS3选择器</h3><p><strong>:enabled</strong> ==&gt; 可用</p>
+<p><strong>:disabled</strong> ==&gt; 不可用</p>
+<p><strong>::selection</strong> 伪元素是用来匹配突出显示的文本(用鼠标选择文本时的文本)。</p>
+<p>火狐模式下需要使用兼容<br>::selection{background:orange;color:white;}<br>::-moz-selection{background:orange;color:white;}</p>
+<p><strong>:read-write</strong> ==&gt; 文本框为非只读<br><strong>:read-only</strong> ==&gt; 文本框为只读</p>
+<p><strong>::before</strong>和<strong>::after</strong>这两个主要用来给元素的前面或后面插入内容</p>
+<p>单冒号(:)用于CSS3伪类，双冒号(::)用于CSS3伪元素。<br>作用是一样的，如果网站只需要兼容webkit、firefox、opera等浏览器，建议对于伪元素采用双冒号的写法，如果不得不兼容IE浏览器，还是用CSS2的单冒号写法比较安全</p>
+
+  </section>
+
+  
+  
+<section class="post-comments">
+    <div class="ds-thread" data-thread-key="2016/11/15/CSS3-属性归纳（上）/"></div>
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"is-yang"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+</section>
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2016&nbsp;IsYang</span>
+	
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?f452c2ae6a5ab8bd7e3f6693fb66a79a";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
